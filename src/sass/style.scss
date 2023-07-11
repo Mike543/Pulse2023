@@ -1,4 +1,18 @@
-@import url(base/_variables.scss);
+@import 'base/_variables';
+/* @import '../../node_modules/swiper/swiper-bundle'; не дописываем .scss но подключаем через импорт*/
 * {
     font-family: "Museo Sans Cyrl", sans-serif;
 }
+
+.main{
+    padding: 0;
+    .inner{
+        margin: 0;
+        padding: 0;
+    }
+
+}
+body{
+    background-color: #000;
+}
+
