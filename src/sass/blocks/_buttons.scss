@@ -1,0 +1,42 @@
+.button {
+    width: 150px;
+    height: 30px;
+    background-color: $main-color;
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 5px;
+    &_main {
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 68px;
+    }
+}
+
+@media (max-width: 767px) {
+    .button { 
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+        &_main {
+            width: 200px;
+            height: 40px;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+    }
+}
+@media (max-width: 575px){
+    .button { 
+        &_main {
+            margin-top: 30px;
+        }
+    }
+}

@@ -4,15 +4,18 @@
     font-family: "Museo Sans Cyrl", sans-serif;
 }
 
-.main{
-    padding: 0;
-    .inner{
-        margin: 0;
-        padding: 0;
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px){
+    .container {
+        max-width: 750px;
+        margin: 0 auto;
     }
-
 }
-body{
-    background-color: #000;
-}
-
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/titles';
