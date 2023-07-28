@@ -1,0 +1,64 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        width: 650px;
+        margin: 0 auto;
+    }
+    .prev,  .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .next {
+        right: -66px;
+        left: auto;
+    }
+    .tns-item{
+        img {
+            display: block; 
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 1200px){
+    .carousel {
+        &__inner {
+            width: 600px;
+        }
+        .prev,  .next {
+            left: -20px;
+        }
+        .next {
+            right: -20px;
+            left: auto;
+        }
+    }
+}
+@media (max-width: 991px){
+    .carousel {
+        &__inner {
+            width: 550px;
+            img {
+                width: 80%;
+            }
+        }
+        .prev,  .next {
+            display: none;
+        }
+        .tns-nav{
+            position: absolute;
+            top: 90%;
+            right: 50%;
+            transform: translateX(-50%);
+        }
+        
+    }
+}
